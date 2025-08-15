@@ -310,6 +310,30 @@
             box-shadow: 0 2px 8px rgba(244, 114, 182, 0.1);
         }
 
+        /* 新增样式：表格头 */
+        .data-highlight .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 2px solid #ec4899; /* 加粗的底部边框 */
+            margin-bottom: 10px; /* 与数据项的间距 */
+            font-weight: bold;
+            color: #be185d;
+            font-size: 1.1em;
+        }
+        .data-highlight .table-header .header-item {
+            flex: 1; /* 让表头项目占据等宽空间 */
+            text-align: center; /* 居中对齐文本 */
+        }
+        .data-highlight .table-header .header-item:first-child {
+            text-align: left; /* 第一个表头左对齐 */
+        }
+        .data-highlight .table-header .header-item:last-child {
+            text-align: right; /* 最后一个表头右对齐 */
+        }
+
+
         /* 案例研究区域 */
         .case-study {
             background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 100%);
@@ -688,7 +712,7 @@
         <div class="container">
             <div class="header">
                 <h1>市场趋势热点分享</h1>
-                <p> 品类部门内部资料分享-2025年7月</p>
+                <p> 玫瑰品类部门内部资料分享-2025年7月</p>
             </div>
 
             <!-- 第一部分：2025新健康消费生活趋势 -->
@@ -1236,7 +1260,7 @@
                     <li><strong>个性化需求凸显：</strong>"感觉寻香""个性化定制"成为社交媒体热门话题，小众沙龙香快速增长</li>
                     <li><strong>明星营销效应显著：</strong>梅森马吉拉、YSL等品牌通过明星代言实现销售爆发，话题营销价值凸显</li>
                     <li><strong>季节性产品策略：</strong>花香、柑橘调等夏日契合香调和限定包装成为品牌差异化手段</li>
-                    <li><strong>全渠道布局重要：</strong>天猫国际、品牌旗舰店、社交媒体形成完整营销转化链路</li>
+                    <li><strong>全渠道布局重要：：</strong>天猫国际、品牌旗舰店、社交媒体形成完整营销转化链路</li>
                     <li><strong>情感价值升级：</strong>香水从功能性向情感性转变，品牌故事、情绪体验成为核心竞争力</li>
                 </ul>
 
@@ -1378,7 +1402,7 @@
                         <ul>
                             <li><strong>情绪疗愈功能：</strong>消费者通过香氛产品寻求情绪放松和心理舒缓，香味成为情绪调节工具</li>
                             <li><strong>多感官和谐体验：</strong>产品追求香味与质地、触感的完美和谐，整体感官体验成为产品设计重点</li>
-                            <li><strong>花果香等温柔香型：</strong>清新自然的香调更受欢迎，满足日常使用和情绪需求</li>
+                            <li><strong>花果香等温柔香型：：</strong>清新自然的香调更受欢迎，满足日常使用和情绪需求</li>
                         </ul>
 
                         <div class="insight-box">
@@ -1630,7 +1654,7 @@
                     <li><strong>女性健身营养兴起：</strong>女性从减脂向增肌转变，专门针对女性的健身营养补剂市场潜力巨大</li>
                     <li><strong>基础健康需求稳定：</strong>肝胃健康、养肝护肝、护眼保健等基础需求持续增长</li>
                     <li><strong>内调外养结合：</strong>消费者更注重内外兼修的全方位健康管理方式</li>
-                    <li><strong>专业化程度提升：</strong>品牌专业性、成分科学性、功效验证成为核心竞争要素</li>
+                    <li><strong>专业化程度提升：：</strong>品牌专业性、成分科学性、功效验证成为核心竞争要素</li>
                     <li><strong>场景化营销有效：</strong>结合具体生活场景和健康需求的营销内容更容易获得用户认同</li>
                 </ul>
 
@@ -1781,6 +1805,11 @@
                         <h4>🏆 厨房电器品牌竞争格局</h4>
                         <p>美的、苏泊尔等领先，腰部品牌竞争激烈</p>
                         <div class="data-highlight">
+                            <!-- Added table header for Kitchen Appliances -->
+                            <div class="table-header">
+                                <span class="header-item">品牌</span>
+                                <span class="header-item">炼丹炉指数</span>
+                            </div>
                             <div class="data-item">
                                 <span>1. 美的 Midea</span>
                                 <span class="data-value">1652</span>
@@ -1843,6 +1872,11 @@
 
                 <h4>🏆 生活电器品牌竞争格局</h4>
                 <div class="data-highlight">
+                    <!-- Added table header for Living Appliances -->
+                    <div class="table-header">
+                        <span class="header-item">品牌</span>
+                        <span class="header-item">炼丹炉指数</span>
+                    </div>
                     <div class="data-item">
                         <span>1. 追觅 dreame</span>
                         <span class="data-value">1691</span>
@@ -1884,7 +1918,7 @@
                         <h4><span class="emoji">🥼</span>日常健康维护渗透</h4>
                         <ul>
                             <li><strong>消费诉求：</strong>重购买决策，追求舒适体验与可靠品质</li>
-                            <li><strong>功能需求：</strong>日常健康维护渗透，背颈腰等劳损部位+养敷、红外等基础理疗技术受欢迎</li>
+                            <li><strong>功能需求：：</strong>日常健康维护渗透，背颈腰等劳损部位+养敷、红外等基础理疗技术受欢迎</li>
                             <li><strong>市场趋势：：</strong>从专业美容向日常护理延伸</li>
                         </ul>
                         <span class="tag">健康维护</span>
@@ -1910,6 +1944,11 @@
 
                 <h4>🏆 个护电器品牌竞争格局</h4>
                 <div class="data-highlight">
+                    <!-- Added table header for Personal Care Appliances -->
+                    <div class="table-header">
+                        <span class="header-item">品牌</span>
+                        <span class="header-item">炼丹炉指数</span>
+                    </div>
                     <div class="data-item">
                         <span>1. 戴森 dyson</span>
                         <span class="data-value">1825</span>
@@ -2214,7 +2253,7 @@
                         <ul>
                             <li><strong>奢侈品化妆品崛起：</strong>香奈儿、娇兰等奢侈品牌化妆品业务价值凸显</li>
                             <li><strong>集团化优势明显：</strong>欧莱雅集团、宝洁集团、LVMH集团旗下多品牌入榜</li>
-                            <li><strong>亚洲市场重要性：</strong>韩国后、雪花秀，日本资生堂、高丝等入选</li>
+                            <li><li><strong>亚洲市场重要性：</strong>韩国后、雪花秀，日本资生堂、高丝等入选</li>
                         </ul>
                         <span class="tag">奢侈品化</span>
                         <span class="tag">集团化运营</span>
